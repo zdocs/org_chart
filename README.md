@@ -2,7 +2,7 @@
 
 Sample script to create a test Org hierarchy.
 
-1. Create test domain zmail.lab.
-2. Create the galsync@domain account.
-3. run the script - z_ca.pl
-4. Follow instructions.
+1. run the script - z_ca.pl
+2. Follow instructions.
+
+Test domain zmail.lab will be used to showcase the hierarchy.
