@@ -1,4 +1,4 @@
-# org_chart_91
+# Zimbra 9 - Org Chart
 
 Sample script to create a test Org hierarchy.
 
