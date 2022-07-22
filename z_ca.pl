@@ -7,7 +7,7 @@ use feature "switch";
 my $date	 = localtime;
 my $cos 	 = "default";
 my $domain	 = "zmail.lab"; 
-my $password = "xtest123x";
+my $password 	 = "xtest123x";
 
 my $file1 = "oaccounts.zmp";
 open(FH1, '>', $file1) or die $!;
@@ -49,8 +49,8 @@ while (<UFH>) {
 close(UFH);
 close(FH1);
 
-print ("\nRun the following commands to ...\n1. Create the zmail.lab domain and GALsync account.\n2. Create users with the hierarchy structure in GAL.\n\n");
-print ("1.\tzmprov cd zmail.lab\n");
-print ("2.\tzmgsautil createAccount -a galsync@zmail.lab -n zimbra --domain zmail.lab -t zimbra -s `zmhostname` -p 1d\n");
+print ("\nRun the following commands to ...\n1. Create the domain and the GALsync account.\n2. Create users with a hierarchy structure.\n\n");
+print ("1. Create Domain - \tzmprov cd $domain\n");
+print ("2. Create galsync - \tzmgsautil createAccount -a galsync\@$domain -n zimbra --domain $domain -t zimbra -s `zmhostname` -p 1d\n");
 print ("3.\tzmprov -f oaccounts.zmp\n");
-print ("4.\tzmgsautil fullSync -a galsync@zmail.lab -n zimbra\n\n");
+print ("4.\tzmgsautil fullSync -a galsync\@$domain -n zimbra\n\n");
